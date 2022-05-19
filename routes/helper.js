@@ -32,14 +32,7 @@ export async function PostProduct(newProducts){
 					.insertMany(newProducts)
 }
 
-//filter to get products
-export async function getProducts(filter){
-	return await cilent
-	                .db('database')
-					.collection('products')
-					.find(filter)
-					.toArray()
-}
+
 
 export async function genPassword(password) {
 	const NO_OF_ROUNDS = 10

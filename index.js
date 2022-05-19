@@ -39,8 +39,8 @@ app.get('/', (req, res) => {
 app.use('/users', usersRouter)
 app.use('/admin', adminRouter)
 app.use('/cart', cartRouter)
-app.use('./products',productsRouter)
-app.use('./orders',ordersRouter);
+app.use('/products',productsRouter)
+app.use('/orders',ordersRouter);
 
 app.listen(PORT, () => {
 	console.log(`Server started on port ${PORT}`)
